@@ -1,0 +1,18 @@
+2021-08-31T19:38:42+01:00 FATAL VT Links added
+2021-08-31T19:38:42+01:00 FATAL VT Lookup Events Registered
+2021-08-31T19:38:42+01:00 FATAL VT Settings Block and Field added
+2021-08-31T19:38:42+01:00 FATAL VT ReceiveIncomingcalls ActionName Added
+2021-08-31T19:38:42+01:00 FATAL VT MakeOutgoingCalls ActionName Added
+2021-08-31T19:38:42+01:00 FATAL VT Successfully added Module Related lists
+2021-09-04T10:36:19+00:00 FATAL VT array (
+  'module' => 'Documents',
+  'view' => 'List',
+)
+2021-09-04T10:36:19+00:00 FATAL VT NULL
+2021-09-04T10:36:19+00:00 FATAL VT Documents_22
+2021-09-04T10:36:19+00:00 FATAL VT array (
+  'module' => 'Documents',
+  'view' => 'List',
+)
+2021-09-04T10:36:19+00:00 FATAL VT NULL
+2021-09-04T10:36:19+00:00 FATAL VT Documents_22
