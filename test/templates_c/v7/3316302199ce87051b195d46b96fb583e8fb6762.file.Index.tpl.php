@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-09-07 15:28:34
+<?php /* Smarty version Smarty-3.1.7, created on 2021-09-07 19:30:40
          compiled from "C:\wamp64\www\vtigercrm\includes\runtime/../../layouts/v7\modules\Settings\CustomerPortal\Index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1847334035612e77bee41307-25802739%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3316302199ce87051b195d46b96fb583e8fb6762' => 
     array (
       0 => 'C:\\wamp64\\www\\vtigercrm\\includes\\runtime/../../layouts/v7\\modules\\Settings\\CustomerPortal\\Index.tpl',
-      1 => 1631028509,
+      1 => 1631043037,
       2 => 'file',
     ),
   ),
@@ -45,7 +45,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
  body.dark{
 	 background-color: #292c35;
+	 color:#fff;
+	 text-color:#fff;
  }
+ .label.dark {
+	 color:#fff;
+ }
+.cp-modules-home{
+	border-top-right-radius: 10px ! important;
+    border-top-left-radius: 10px ! important;
+	 
+}
+ 
 
 	.portal-annoucement-widget-container, 
 	.portal-record-widget-container, 
@@ -92,16 +103,55 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	.portalModuleRow:hover{
 		margin-left: -10px;
 		margin-right: -10px;
-		color: #000!important;
+		color: #fff!important;
 		border-radius:10px !important;
 		height:60px;
+		background-color:#3978fe;
 		 
 
+	}
+
+	h4{
+		font-size: 25px
 	}
 	.portal-dashboard{
 		border-right: 1px  solid #3978fe!important;
 	}
  
+a.cp-modules:hover{
+	 background-color:transparent!important;
+	 
+	 padding:2px;
+	 border-radius:20px;
+
+ }
+#portalModulesTable > li.portalModuleRow.active > a:hover{
+	 background-color:transparent!important;
+ }
+ a:focus{
+	 backgroud-color:transparent!important;
+
+ }
+ #portalModulesTable > li.portalModuleRow.active > a:focus{
+	  backgroud-color:transparent!important;
+ }
+ 
+ .nav>li>a:hover, .nav>li>a:focus{
+	  backgroud-color:#3978fe!important;
+ }
+ .nav>li.disabled>a{
+	 color:#3978fe;
+ }
+ label, .fieldLabel{
+	 color:#3978fe;
+ }
+ input, button, select, textarea{
+	 color:#3978fe;
+ }
+ 
+ 
+
+
 	.label{
 		background-color:#111;
 		display:flex;
@@ -133,7 +183,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		transition:transform 0.2s linear;
 
 	}
-	.checkboxSwitch{
+	.checkboxSwitch, .checkboxSwitch:checked{
 		opacity:0;
 		position:absolute;
 	}
@@ -206,6 +256,8 @@ $_smarty_tpl->tpl_vars['MODEL']->_loop = true;
 			//change the theme of website
 			console.log('teste')
 		document.body.classList.toggle('dark');
+		document.body.textarea.style.color="#000"
+		document.body.p.style.color="#000"
 		});
 	</script>
  

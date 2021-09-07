@@ -23,6 +23,7 @@
 			<link type='text/css' rel='stylesheet' href='libraries/bootstrap/js/eternicode-bootstrap-datepicker/css/datepicker3.css'/>
 			<link type='text/css' rel='stylesheet' href='layouts/v7/lib/jquery/jquery-ui-1.12.0.custom/jquery-ui.css'/>
 			<link type='text/css' rel='stylesheet' href='layouts/v7/lib/vt-icons/style.css'/>
+			<script src="https://kit.fontawesome.com/ae20ed97e2.js" crossorigin="anonymous"></script>
 
 			{if strpos($V7_THEME_PATH,".less")!== false}
 				<link type="text/css" rel="stylesheet/less" href="{vresource_url($V7_THEME_PATH)}" media="screen" />
