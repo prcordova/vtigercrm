@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-08-31 18:41:02
+<?php /* Smarty version Smarty-3.1.7, created on 2021-09-06 13:03:10
          compiled from "C:\wamp64\www\vtigercrm\includes\runtime/../../layouts/v7\modules\Settings\CustomerPortal\CustomerPortalDashboard.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1673677889612e77bee9f841-63653044%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f0376952bd9f4b5c315b38c7f76bfe763881c96e' => 
     array (
       0 => 'C:\\wamp64\\www\\vtigercrm\\includes\\runtime/../../layouts/v7\\modules\\Settings\\CustomerPortal\\CustomerPortalDashboard.tpl',
-      1 => 1630435126,
+      1 => 1630933338,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_612e77beecea6',
   'variables' => 
   array (
     'QUALIFIED_MODULE' => 0,
@@ -31,10 +33,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'key1' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_612e77beecea6',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_612e77beecea6')) {function content_612e77beecea6($_smarty_tpl) {?>
+
+ 
+
 
 <div class="col-lg-7 col-md-7 col-sm-7 row"><div class="portal-annoucement-widget-container"><div class="portal-annoucement-widget" ><h5><?php echo vtranslate('LBL_ANNOUNCEMENT',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </h5></div><div class="portal" ><textarea class="inputElement portal" name="announcement" id="portalAnnouncement" style="resize:vertical;"><?php echo $_smarty_tpl->tpl_vars['ANNOUNCEMENT']->value;?>

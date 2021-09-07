@@ -201,7 +201,18 @@
 					</ul>
 				</div>
 			</div>
+		<div class="col-2">
+			<input type="checkbox" id="checkboxSwitch" 
+		class="checkboxSwitch" >
+			<label for="checkboxSwitch" 
+		class="label" >
+			<i class="fas fa-moon"></i>
+			<i class="fas fa-sun"></i>
+			<div class="ball"></div>
+			</label>
+	</div>
 		</div>
+
 		{if $FIELDS_INFO neq null}
 			<script type="text/javascript">
 				var uimeta = (function () {
@@ -234,4 +245,5 @@
 			</script>
 		{/if}
 	</div>
+	 
 {/strip}

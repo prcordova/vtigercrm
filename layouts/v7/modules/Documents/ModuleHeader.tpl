@@ -10,6 +10,7 @@
 -->*}
 
 {strip}
+
 	<div class="col-sm-12 col-xs-12 module-action-bar clearfix coloredBorderTop">
 		<div class="module-action-content clearfix">
 			<div class="col-lg-7 col-md-7 module-breadcrumb module-breadcrumb-{$smarty.request.view}">

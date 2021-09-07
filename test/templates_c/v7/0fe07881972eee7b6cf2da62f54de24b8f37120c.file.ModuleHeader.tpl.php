@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2021-08-31 18:40:36
+<?php /* Smarty version Smarty-3.1.7, created on 2021-09-07 15:54:34
          compiled from "C:\wamp64\www\vtigercrm\includes\runtime/../../layouts/v7\modules\Settings\Vtiger\ModuleHeader.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:146119615612e77a438d203-15720607%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0fe07881972eee7b6cf2da62f54de24b8f37120c' => 
     array (
       0 => 'C:\\wamp64\\www\\vtigercrm\\includes\\runtime/../../layouts/v7\\modules\\Settings\\Vtiger\\ModuleHeader.tpl',
-      1 => 1627027149,
+      1 => 1631030070,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_612e77a447f90',
   'variables' => 
   array (
     'USER_MODEL' => 0,
@@ -37,8 +39,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'FIELDS_INFO' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_612e77a447f90',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_612e77a447f90')) {function content_612e77a447f90($_smarty_tpl) {?>
 
@@ -118,6 +118,6 @@ _listView_basicAction_<?php echo Vtiger_Util_Helper::replaceSpaceWithUnderScores
 "'<?php }?><?php }?>><?php if ($_smarty_tpl->tpl_vars['MODULE']->value=='Tags'){?><i class="fa fa-plus"></i>&nbsp;&nbsp;<?php echo vtranslate('LBL_ADD_TAG',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 <?php }else{ ?><?php if ($_smarty_tpl->tpl_vars['LISTVIEW_BASICACTION']->value->getIcon()){?><i class="<?php echo $_smarty_tpl->tpl_vars['LISTVIEW_BASICACTION']->value->getIcon();?>
 "></i>&nbsp;&nbsp;<?php }?><?php echo vtranslate($_smarty_tpl->tpl_vars['LISTVIEW_BASICACTION']->value->getLabel(),$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-<?php }?></button></li><?php } ?><?php }?></ul></div></div></div><?php if ($_smarty_tpl->tpl_vars['FIELDS_INFO']->value!=null){?><script type="text/javascript">var uimeta = (function () {var fieldInfo = <?php echo $_smarty_tpl->tpl_vars['FIELDS_INFO']->value;?>
+<?php }?></button></li><?php } ?><?php }?></ul></div></div><div class="col-2"><input type="checkbox" id="checkboxSwitch"class="checkboxSwitch" ><label for="checkboxSwitch"class="label" ><i class="fas fa-moon"></i><i class="fas fa-sun"></i><div class="ball"></div></label></div></div><?php if ($_smarty_tpl->tpl_vars['FIELDS_INFO']->value!=null){?><script type="text/javascript">var uimeta = (function () {var fieldInfo = <?php echo $_smarty_tpl->tpl_vars['FIELDS_INFO']->value;?>
 ;return {field: {get: function (name, property) {if (name && property === undefined) {return fieldInfo[name];}if (name && property) {return fieldInfo[name][property]}},isMandatory: function (name) {if (fieldInfo[name]) {return fieldInfo[name].mandatory;}return false;},getType: function (name) {if (fieldInfo[name]) {return fieldInfo[name].type}return false;}},};})();</script><?php }?></div>
 <?php }} ?>

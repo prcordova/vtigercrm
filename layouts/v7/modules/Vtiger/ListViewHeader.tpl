@@ -10,6 +10,7 @@
 -->*}
 
 {strip}
+test
 <div class="module-action-bar clearfix">
     <div class="module-action-content clearfix row">
         <div class="col-lg-4 col-md-4 col-sm-4">

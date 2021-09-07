@@ -6,10 +6,124 @@
 * Portions created by vtiger are Copyright (C) vtiger.
 * All Rights Reserved.
 *************************************************************************************}
+ 
+
 
 {strip}
 
+
+
+
+{literal} <style>
+
+ body.dark{
+	 background-color: #292c35;
+ }
+
+	.portal-annoucement-widget-container, 
+	.portal-record-widget-container, 
+	.portal-shortcuts-container, 
+	.portal-helpdesk-widget-container, 
+	.portal-helpdesk-widget-container{
+
+		border-radius: 10px;
+		text-align: center;
+		font-family: Poppins,sans-serif;
+	}
+
+	.portal-annoucement-widget, 
+	.portal-record-widget-content, 
+	.portal-shortcuts-header, 
+	.portal-helpdesk-widget-header, 
+	.portal-helpdesk-widget-header{
+		background-color: #3978fe;
+		border-radius:10px;
+	}
+	.portalMenuHeader{
+		border-bottom: 1px solid #3978fe!important;
+		border-right: 1px solid #3978fe!important;
+	}
+	.portal-dashboard{
+		border-top: 1px solid #3978fe!important;
+		 
+	}
+	.portalModuleRow{
+		border-left: 4px solid #3978fe !important;
+	}
+	.coloredBorderTop{
+		border-top: 1px solid #3978fe!important;
+	
+	}
+	.portalModuleRow {
+		margin-top:10px;
+		background-color :#3978fe;
+		color: #fff!important;
+		border-radius: 10px;
+		height:60px;
+	
+	}
+	.portalModuleRow:hover{
+		margin-left: -10px;
+		margin-right: -10px;
+		color: #000!important;
+		border-radius:10px !important;
+		height:60px;
+		 
+
+	}
+	.portal-dashboard{
+		border-right: 1px  solid #3978fe!important;
+	}
+ 
+	.label{
+		background-color:#111;
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		border-radius:50px;
+		position:relative;
+		padding:5px;
+		height:26px;
+		width: 50px;
+		
+	}
+	 
+	 
+	.fa-moon{
+		color:#f1c40f;
+	}
+	.fa-sun{
+		color:#f39c12;
+	}
+	.ball{
+		background-color:#fff;
+		border-radius:50%;
+		position:absolute;
+		height:22px;
+		width:22px;
+		top:2px;
+		left:2px;
+		transition:transform 0.2s linear;
+
+	}
+	.checkboxSwitch{
+		opacity:0;
+		position:absolute;
+	}
+	.checkboxSwitch:checked + .label .ball{
+		transform:translateX(24px);
+
+	}
+
+	
+
+ </style>{/literal}
+
+ 
+ 
+
 	<div class="listViewPageDiv" id="listViewContent">
+	
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<br>
 			<form id="customerPortalForm" name="customerPortalForm" action="index.php" method="POST" class="form-horizontal">
@@ -104,4 +218,17 @@
 			</form>
 		</div>
 	</div>
+
+{literal}
+	<script language=javascript>
+	 
+		const checkboxSwitch = document.querySelector("#checkboxSwitch");
+
+		checkboxSwitch.addEventListener('change', () => {
+			//change the theme of website
+			console.log('teste')
+		document.body.classList.toggle('dark');
+		});
+	</script>
+ {/literal}
 {/strip}

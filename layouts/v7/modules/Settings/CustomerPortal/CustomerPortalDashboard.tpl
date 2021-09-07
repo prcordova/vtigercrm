@@ -7,6 +7,9 @@
 * All Rights Reserved.
 *************************************************************************************}
 
+ 
+
+
 {strip}
 	<div class="col-lg-7 col-md-7 col-sm-7 row">
 		<div class="portal-annoucement-widget-container">

@@ -5,7 +5,18 @@
  * The Initial Developer of the Original Code is vtiger.
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
- *************************************************************************************/
+
+*************************************************************************************/
+
+
+
+ 
+
+
+
+
+
+
 Vtiger.Class('Settings_Customer_Portal_Js', {}, {
 	//This will store the CustomerPortal Form
 	customerPortalForm: false,
